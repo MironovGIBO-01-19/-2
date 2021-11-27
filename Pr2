@@ -1,0 +1,68 @@
+пакет  ru.mirea.gibo0119.pr2 ;
+import  java.lang. * ;
+import  java.util. * ;
+
+  public  class  Matrix {
+public  static  void  main ( String [] args ) {
+        Вход сканера =  новый  сканер ( System . In);
+        Система . из . print ( " Введите количество элементов массива: " );
+
+        int size = input . nextInt ();
+
+        Целое число [] массив1 =  новое  целое число [размер];
+
+        Система . из . print ( " Тип элемента массива: " );
+        for ( int i =  0 ; i < size; i ++ ) {
+        array1 [i] = ввод . nextInt ();
+        }
+        Система . из . print ( " Введённый массив: " );
+        for ( int i =  0 ; i < size; i ++ ) {
+        Система . из . print ( "  "  + array1 [i]);
+        }
+
+        Система . из . print ( " \ n "  +  " Максимальный элемент массива: " );
+        int maxNumber = размер;
+        for ( int i =  0 ; i < size; i ++ ) {
+        if (maxNumber <= array1 [i]) {
+        maxNumber = array1 [i];
+        }
+        }
+        Система . из . println (maxNumber);
+
+        Система . из . print ( " Минимальный элемент массива: " );
+        int minNumber = array1 [ 0 ];
+        for ( int i =  0 ; i < size; i ++ ) {
+        if (array1 [i] < array1 [ 0 ]) {
+        minNumber = array1 [i];
+        }
+        }
+        Система . из . println (minNumber);
+
+        Система . из . print ( " Сумма элементов массива: " );
+        int sum =  0 ;
+        for ( int i =  0 ; i < size; i ++ ) {
+        сумма + = массив1 [я];
+        }
+        Система . из . println (сумма);
+
+        Система . из . print ( " Среднее арифметическое элементы массива: " );
+        int среднее =  0 ;
+        for ( int i =  0 ; i < size; i ++ ) {
+        среднее = сумма / размер;
+        }
+        Система . из . println (в среднем);
+
+        Система . из . print ( " Массив, отсортированный по возрастанию: " );
+        Массивы . сортировка (массив1);
+        for ( int i =  0 ; i < size; i ++ ) {
+        Система . из . печать (массив1 [я] +  "  " );
+        }
+        Система . из . println ( " \ т " );
+
+        Система . из . print ( " Массив, отсортированный по убыванию: " );
+        Массивы . sort (массив1, Коллекции . reverseOrder ());
+        for ( int i =  0 ; i < size; i ++ ) {
+        Система . из . печать (массив1 [я] +  "  " );
+        }
+     }
+  }
